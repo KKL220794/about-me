@@ -1,0 +1,19 @@
+.profile-image {
+  position: relative;
+  background: #000;
+
+  img {
+    vertical-align: middle;
+    width: 100%;
+    opacity: 0.8;
+  }
+  .name-holder{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+  }
+}
