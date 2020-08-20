@@ -1,0 +1,81 @@
+.login-from {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  .form-holder {
+    background: #fff;
+    border-radius: 10px;
+
+    form{
+        padding: 25px;
+
+        @media only screen and(max-width: 600px) {
+
+        }
+
+        .form-row {
+            display: flex;
+            align-items: center;
+
+            span{
+                margin-right: 20px;
+                font-size: 15px;
+                color: #808080;
+    
+            }
+        }
+        .button-row{
+            button{
+                line-height: 1.2;
+                padding: 8px 58px;
+                font-weight: 700;
+                height: 50px;
+                border-radius: 25px;
+            }
+        }
+    }
+  }
+
+  .header-title::before {
+      content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: inherit;
+    background: rgba(54, 84, 99, 0.4);
+  }
+  .header-title {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    z-index: 1;
+    background: url("../../assets/images/contact-us.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 15px 74px 15px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+
+  }
+
+  @media (min-width: 1025px) {
+    width: 670px;
+  }
+}
