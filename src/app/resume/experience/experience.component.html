@@ -1,26 +1,27 @@
+<app-loader [isLoading] = "isLoading" ></app-loader>
 <section class="experience">
   <p class="header-title">
     <i class="fa fa-briefcase" aria-hidden="true"></i>Work Experience
   </p>
   <ul class="collapsible">
-    <li>
-      <div class="collapsible-header" (click) = "isCollapsibleOpened = !isCollapsibleOpened">
+    <li *ngFor="let exp of experienceList" >
+      <div class="collapsible-header" (click) = "exp.isCollapsed = !exp.isCollapsed">
         <i class="fa fa-briefcase" aria-hidden="true"></i>
-        Associate Software Developer, Pune
-        <i *ngIf = "!isCollapsibleOpened" class="fa fa-chevron-right right-align" aria-hidden="true"></i>
-      <i *ngIf = "isCollapsibleOpened" class="fa fa-chevron-down right-align" aria-hidden="true"></i>
+        {{exp.designaiton}}
+        <i *ngIf = "exp.isCollapsed" class="fa fa-chevron-right right-align" aria-hidden="true"></i>
+      <i *ngIf = "!exp.isCollapsed" class="fa fa-chevron-down right-align" aria-hidden="true"></i>
 
       </div>
       <div class="collapsible-body">
-        <p class="company-name">Synechron Technologies Pvt Ltd, Pune </p>
+        <p class="company-name">{{ exp.company}} </p>
         <p class="duration"><i class="fa fa-calendar" aria-hidden="true"></i>
-          January, 20 - <a class="waves-effect waves-light btn">Current</a> 
+          {{exp.startDate}} - {{exp.endDate ? exp.endDate : ''}}<a *ngIf="!exp.endDate" class="waves-effect waves-light btn">Current</a> 
         </p>
         <ol class="exp-list">
-          <li>Created dashboard screen from scratch using Angol class="exp-list"ar 8, HTML, Angular Material, CSS and Highcharts</li>
-          <li>Used different types of RxJs operators to make api calls and its chaining</li>
+          <li *ngFor="let desc of exp.responsibilities" > {{ desc }} </li>
+          <!-- <li>Used different types of RxJs operators to make api calls and its chaining</li>
           <li>Well equipped in using Rxjs, Observables, Subject, Api calls. </li>
-          <li>Created barcharts, piecharts etc to visualize the data</li>
+          <li>Created barcharts, piecharts etc to visualize the data</li> -->
         </ol>
       </div>
     </li>

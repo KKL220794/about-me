@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Experience, ExperienceService } from './experience.service';
 declare var jQuery: any;
 
 
@@ -9,12 +10,18 @@ declare var jQuery: any;
 })
 export class ExperienceComponent implements OnInit {
 
-  isCollapsibleOpened;
+  isLoading = false;
+  experienceList: Experience[];
 
-  constructor() { }
+  constructor(private _experienceService: ExperienceService) { }
 
   ngOnInit() {
-    this.isCollapsibleOpened = false;
+this.isLoading = true;
+    this._experienceService.getExperience().subscribe(data => {
+      this.experienceList = data;
+      this.isLoading = false
+    }
+      );
   }
 
   ngAfterViewInit() {

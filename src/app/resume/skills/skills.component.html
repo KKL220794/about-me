@@ -3,7 +3,14 @@
     <i class="fa fa-star" aria-hidden="true"></i> Technical Skills
   </p>
   <div class="skill-wrapper">
-    <p><span>Angular 2+</span></p>
+    <div *ngFor="let skill of skillSet" >
+      <p><span> {{ skill.name }}</span></p>
+      <div class="progress">
+        <div class="determinate"  [ngStyle]="{'width': skill.rating}" ></div>
+      </div>
+
+    </div>
+    <!-- <p><span>Angular 2+</span></p>
     <div class="progress">
       <div class="determinate" style="width: 70%;"></div>
     </div>
@@ -18,11 +25,7 @@
     <p><span>Angular 2+</span></p>
     <div class="progress">
       <div class="determinate" style="width: 70%;"></div>
-    </div>
-    <p><span>Angular 2+</span></p>
-    <div class="progress">
-      <div class="determinate" style="width: 70%;"></div>
-    </div>
+    </div> -->
   </div>
 
   <hr>

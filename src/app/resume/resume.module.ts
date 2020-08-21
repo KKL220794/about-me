@@ -8,18 +8,25 @@ import { LanguagesComponent } from "./languages/languages.component";
 import { PersonalDetailsComponent } from "./personal-details/personal-details.component";
 import { ProfileImageComponent } from "./profile-image/profile-image.component";
 import { ExperienceComponent } from './experience/experience.component';
+import { HttpClientModule } from '@angular/common/http';
+import { LoaderComponent } from '../loader/loader.component';
 
 export const routes: Routes = [{ path: "", component: ResumeComponent }];
 
 @NgModule({
-  imports: [CommonModule, RouterModule.forChild(routes)],
+  imports: [
+    CommonModule, RouterModule.forChild(routes),
+    HttpClientModule
+    
+  ],
   declarations: [
     ResumeComponent,
     SkillsComponent,
     LanguagesComponent,
     PersonalDetailsComponent,
     ProfileImageComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    LoaderComponent
   ],
 })
 export class ResumeModule {}

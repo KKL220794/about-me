@@ -1,0 +1,105 @@
+{
+  "skills": [
+    {
+      "name": "Angular 2+",
+      "rating": "100%"
+    },
+    {
+      "name": "HTML5",
+      "rating": "100%"
+    },
+    {
+      "name": "CSS 3",
+      "rating": "70%"
+    },
+    {
+      "name": "JAVASCRIPT",
+      "rating": "80%"
+    },
+    {
+      "name": "TYPESCRIPT",
+      "rating": "70%"
+    },
+    {
+      "name": "NODEJS",
+      "rating": "70%"
+    },
+    {
+      "name": "EXPRESSJS",
+      "rating": "70%"
+    },
+    {
+      "name": "Angular Material",
+      "rating": "100%"
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "rating": "100%"
+    },
+    {
+      "name": "Hindi",
+      "rating": "100%"
+    }
+  ],
+  "experience": [
+    {
+      "designaiton": "Associate Software Developer, Pune",
+      "company": "Synechron Technologies Pvt Ltd, Pune",
+      "startDate": "Jan, 20",
+      "endDate": null,
+      "responsibilities": [
+        "Created dashboard screen from scratch using Angular 8, HTML, Angular Material, CSS and Highcharts",
+        "Used different types of RxJs operators to make api calls and its chaining",
+        "Well equipped in using Rxjs, Observables, Subject, Api calls.",
+        "Created barcharts, piecharts etc to visualize the data"
+      ],
+      "isCollapsed": true
+    },
+    {
+      "designaiton": "Software Developer, Pune",
+      "company": "GoBiggi Services Pvt Ltd, Pune",
+      "startDate": "Jan, 19",
+      "endDate": "Jan, 20",
+      "responsibilities": [
+        "Created entire dashboard screen(15+) using Angular 7, HTML, Angular Material and SCSS",
+        "Used charts to display the analytics, data table to show the tables.",
+        "Created two libraries. One to crop the images as per the user requirements and other to check the validity of phone numbers of different countries. Both the libraries are uploaded in the npmjs library.",
+        "Connected the entire application to the backend using restful services.",
+        "Well versed in using Rxjs, Observables, Subject, Api calls.",
+        "Implemented Lazy Loading in the entire application.",
+        "Created custom pipes, directives, guards and route interceptors."
+      ],
+      "isCollapsed": true
+
+    },
+    {
+      "designaiton": "Front End Developer, Pune",
+      "company": "Infosys Ltd, Pune",
+      "startDate": "Sep, 17",
+      "endDate": "Sep, 18",
+      "responsibilities": [
+        "Managing, monitoring and conducting Singapore government based examinations through a lite weight internet based application ",
+        "Designed survey builders in angular 6 where admin will build a survey page, fetch survey questions and send the answers back to backend through https get, post and put methods.",
+        "Designed the platform where the teachers will set the questions in number of sets along with various options.",
+        "Lazy loaded the complete module in order to increase the speed."
+      ],
+      "isCollapsed": true
+
+    },
+    {
+      "designaiton": "System Engineer, Mysore",
+      "company": "Infosys Ltd, Mysore",
+      "startDate": "Mar, 17",
+      "endDate": "Aug, 17",
+      "responsibilities": [
+        "Design, Development and deployment of a python based reading app similar to Wikipedia.",
+        "Trained in python, SQL, datastructures, algorithm design and thereafter worked in the designing and developing a reading app in python and SQL where a user can login and read the articles along with editing and adding the topics.",
+        "Used various type of joins in order to get the required data from sql database"
+      ],
+      "isCollapsed": true
+
+    }
+  ]
+}
