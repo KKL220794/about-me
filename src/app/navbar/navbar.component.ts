@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+declare var jQuery: any;
+
 
 @Component({
   selector: 'app-navbar',
@@ -11,5 +13,10 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  ngAfterViewInit() {
+    jQuery('.sidenav').sidenav();
+}
+
 
 }

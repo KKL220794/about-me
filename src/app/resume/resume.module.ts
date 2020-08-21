@@ -9,14 +9,15 @@ import { PersonalDetailsComponent } from "./personal-details/personal-details.co
 import { ProfileImageComponent } from "./profile-image/profile-image.component";
 import { ExperienceComponent } from './experience/experience.component';
 import { HttpClientModule } from '@angular/common/http';
-import { LoaderComponent } from '../loader/loader.component';
+import { LoaderModule } from '../loader/loader.module';
 
 export const routes: Routes = [{ path: "", component: ResumeComponent }];
 
 @NgModule({
   imports: [
     CommonModule, RouterModule.forChild(routes),
-    HttpClientModule
+    HttpClientModule,
+    LoaderModule
     
   ],
   declarations: [
@@ -26,7 +27,6 @@ export const routes: Routes = [{ path: "", component: ResumeComponent }];
     PersonalDetailsComponent,
     ProfileImageComponent,
     ExperienceComponent,
-    LoaderComponent
   ],
 })
 export class ResumeModule {}

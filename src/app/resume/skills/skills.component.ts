@@ -9,11 +9,16 @@ import { Skills, SkillsService } from './skills.service';
 export class SkillsComponent implements OnInit {
 
   skillSet: Skills[];
+  isLoading = false;
 
   constructor(private _skillsService: SkillsService) { }
 
   ngOnInit() {
-    this._skillsService.getSkillSet().subscribe(data => this.skillSet = data);
+    this.isLoading = true;
+    this._skillsService.getSkillSet().subscribe(data => {
+      this.skillSet = data; 
+      this.isLoading = false; }
+      );
   }
 
 }

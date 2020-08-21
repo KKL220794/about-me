@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 
 import { Routes, RouterModule } from '@angular/router';
+import { LoaderModule } from '../loader/loader.module';
 
 export const routes: Routes = [ 
   { path: '', component: HomeComponent}
@@ -11,6 +12,7 @@ export const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
+    LoaderModule,
     RouterModule.forChild(routes)
   ],
   declarations: [HomeComponent]

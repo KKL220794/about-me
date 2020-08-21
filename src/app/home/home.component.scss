@@ -25,7 +25,17 @@
     outline: 4px double #FFFFFF;
     outline-offset: 8px;
     transform: translateX(-50%) translateY(-50%);
+
+    @media only screen and (max-width: 600px) {
+      min-width: 80%;
   }
+  
+  // // Media Query for Tablet resolution
+  // @media (min-width: 601px) and (max-width: 1024px) {
+  //     width: 70%;
+  // }
+  
+    }
   
   .mouse-icon {
     position: absolute;

@@ -23,6 +23,11 @@ export const routes: Routes = [
     loadChildren: () =>
       import("./contact/contact.module").then((m) => m.ContactModule),
   },
+  {
+    path: "login",
+    loadChildren: () =>
+      import("./login/login.module").then((m) => m.LoginModule),
+  },
   { path: "", redirectTo: "home", pathMatch: "full" },
 ];
 

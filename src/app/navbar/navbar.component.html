@@ -2,12 +2,24 @@
 <nav>
   <div class="nav-wrapper">
     <a href="#" class="brand-logo">Logo</a>
+    <a data-target="mobile-sidenav" class="sidenav-trigger right"><i class="hamburger fa fa-bars"></i></a>
+
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li><a [routerLink]="['/home']" routerLinkActive="router-link-active"  >Home</a></li>
       <li><a [routerLink]="['/about-me']" routerLinkActive="router-link-active" >About Me</a></li>
-      <li><a >Skills</a></li>
+      <!-- <li><a >Skills</a></li> -->
       <li><a [routerLink]="['/contact']" routerLinkActive="router-link-active" >Contact</a></li>
+      <li><a [routerLink]="['/login']" routerLinkActive="router-link-active" >Login</a></li>
     </ul>
   </div>
 </nav>
 </div>
+
+<!-- Mobile Layout -->
+<ul class="sidenav" id="mobile-sidenav">
+  <li><a [routerLink]="['/home']" routerLinkActive="router-link-active"  >Home</a></li>
+  <li><a [routerLink]="['/about-me']" routerLinkActive="router-link-active" >About Me</a></li>
+  <!-- <li><a >Skills</a></li> -->
+  <li><a [routerLink]="['/contact']" routerLinkActive="router-link-active" >Contact</a></li>
+  <li><a [routerLink]="['/login']" routerLinkActive="router-link-active" >Login</a></li>
+</ul>
