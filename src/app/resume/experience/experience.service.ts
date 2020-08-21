@@ -9,7 +9,8 @@ export interface Experience {
   startDate: string;
   endDate: string;
   image: string;
-  isCollapsed: boolean
+  isCollapsed: boolean;
+  imageUrl: string
 }
 
 @Injectable({

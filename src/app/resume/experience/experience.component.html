@@ -6,10 +6,10 @@
   <ul class="collapsible">
     <li *ngFor="let exp of experienceList" >
       <div class="collapsible-header" (click) = "exp.isCollapsed = !exp.isCollapsed">
-        <i class="fa fa-briefcase" aria-hidden="true"></i>
+        <img [src]="exp.imageUrl" alt="company name" >
         {{exp.designaiton}}
         <i *ngIf = "exp.isCollapsed" class="fa fa-chevron-right right-align" aria-hidden="true"></i>
-      <i *ngIf = "!exp.isCollapsed" class="fa fa-chevron-down right-align" aria-hidden="true"></i>
+        <i *ngIf = "!exp.isCollapsed" class="fa fa-chevron-down right-align" aria-hidden="true"></i>
 
       </div>
       <div class="collapsible-body">

@@ -1,62 +1,71 @@
-.experience{
-    padding: 25px;
+.experience {
+  padding: 25px;
 
-    .header-title{
-       font-size: 26px;
-       color: #757575;
-       margin-top: 0;
-       font-weight: bold;
+  .header-title {
+    font-size: 26px;
+    color: #757575;
+    margin-top: 0;
+    font-weight: bold;
 
-       i{
-           margin-right: 20px;
-           color: #26a69a
-       }
+    i {
+      margin-right: 20px;
+      color: #26a69a;
     }
+  }
 
-    .collapsible{
-        box-shadow: none;
-        border: 0;
-        .collapsible-header{
-            background: inherit;
-            padding-left: 0;
-            font-size: 18px;
-            color: #26a69a;
-            font-weight: 700;
-            i{
-                margin-right: 20px;
-            }
-            .right-align {
-                position: absolute;
-                right: 0;
-                font-size: 18px;
-                color: #757575
-
-            }
-        }
-        .collapsible-body{
-            padding: 0;
-            .company-name {
-                font-size: 18px;
-                color: #757575;
-                font-weight: 700;
-            }
-            .duration {
-                i{
-                    margin-right: 20px;
-
-                }
-                font-size: 18px;
-                color:#26a69a ;
-            }
-            .exp-list{
-               list-style: disc;
-               padding-left: 15px;
-               li {
-                   color: #757575;
-                   font-size: 15px;
-                   margin-bottom: 10px;
-               }
-            }
-        }
+  .collapsible {
+    box-shadow: none;
+    border: 0;
+    .collapsible-header {
+      background: inherit;
+      padding-left: 0;
+      font-size: 18px;
+      color: #26a69a;
+      font-weight: 700;
+      display: flex;
+    align-items: center;
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+      i {
+        margin-right: 20px;
+      }
+      .right-align {
+        position: absolute;
+        right: 0;
+        font-size: 18px;
+        color: #757575;
+      }
     }
+    .collapsible-body {
+      padding: 0;
+      .company-name {
+        font-size: 18px;
+        color: #757575;
+        font-weight: 700;
+      }
+      .duration {
+        i {
+          margin-right: 20px;
+        }
+        font-size: 18px;
+        color: #26a69a;
+      }
+      a {
+        border-radius: 25px;
+      }
+      .exp-list {
+        list-style: disc;
+        padding-left: 15px;
+        li {
+          color: #757575;
+          font-size: 15px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
 }

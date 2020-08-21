@@ -55,7 +55,8 @@
         "Well equipped in using Rxjs, Observables, Subject, Api calls.",
         "Created barcharts, piecharts etc to visualize the data"
       ],
-      "isCollapsed": true
+      "isCollapsed": true,
+      "imageUrl" : "https://media.glassdoor.com/sql/259545/synechron-squarelogo-1456295644328.png"
     },
     {
       "designaiton": "Software Developer, Pune",
@@ -71,7 +72,8 @@
         "Implemented Lazy Loading in the entire application.",
         "Created custom pipes, directives, guards and route interceptors."
       ],
-      "isCollapsed": true
+      "isCollapsed": true,
+      "imageUrl": "https://media-exp1.licdn.com/dms/image/C4E0BAQHs1GS8tDo_mw/company-logo_200_200/0?e=1606348800&v=beta&t=THLNyd7sHITV1I-Z1BUa4R4ZbDigT9I54LlCrQZXj5c"
 
     },
     {
@@ -85,7 +87,8 @@
         "Designed the platform where the teachers will set the questions in number of sets along with various options.",
         "Lazy loaded the complete module in order to increase the speed."
       ],
-      "isCollapsed": true
+      "isCollapsed": true,
+      "imageUrl": "https://media.glassdoor.com/sql/7927/infosys-squarelogo-1516788308150.png"
 
     },
     {
@@ -98,7 +101,8 @@
         "Trained in python, SQL, datastructures, algorithm design and thereafter worked in the designing and developing a reading app in python and SQL where a user can login and read the articles along with editing and adding the topics.",
         "Used various type of joins in order to get the required data from sql database"
       ],
-      "isCollapsed": true
+      "isCollapsed": true,
+      "imageUrl": "https://media.glassdoor.com/sql/7927/infosys-squarelogo-1516788308150.png"
 
     }
   ]
