@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { ContactComponent } from './contact.component';
 
 import { Routes, RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LoaderModule } from '../loader/loader.module';
 
 export const routes: Routes = [
   {path: '', component: ContactComponent}
@@ -10,7 +12,9 @@ export const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    ReactiveFormsModule,
+    LoaderModule
   ],
   declarations: [ContactComponent]
 })

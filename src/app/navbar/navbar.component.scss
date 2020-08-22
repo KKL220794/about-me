@@ -1,0 +1,22 @@
+nav {
+    background: #006064;
+
+   .brand-logo {
+        color: black;
+        font-family: 'Dancing Script', cursive;
+        font-size: 24px;
+        color: #fff;
+        left: 15px;
+
+        @media screen and(max-width: 600px) {
+            left:5%;
+            transform: none;
+            
+        }
+    }
+
+
+}
+.router-link-active {
+    color: #1de9b6;
+}

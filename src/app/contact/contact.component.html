@@ -1,17 +1,19 @@
+<app-loader [isLoading] = "isLoading" ></app-loader>
 <div class="login-from">
   <section>
     <div class="form-holder">
+      <p class="loader-message" *ngIf = "message" [ngStyle]="{'background': messageColor}" >{{message}} <span (click) = "message = ''">X</span></p>
       <div class="header">
         <!-- <div class="header-title"> -->
         <span class="header-title">Contact Me</span>
-        <form>
+        <form [formGroup] = "contactForm" (ngSubmit) = "onFormSubmit()" >
           <div class="row form-row">
             <div class="col s12 m3">
               <span>Name</span>
             </div>
             <div class="col s12 m9">
               <label for="name"></label>
-              <input type="text" id="name" class="validate" placeholder="Enter Name" />
+              <input type="text" id="name" class="validate" placeholder="Enter Name" formControlName = "name" />
             </div>
           </div>
           <div class="row form-row">
@@ -20,7 +22,7 @@
             </div>
             <div class="col s12 m9">
               <label for="email"></label>
-              <input type="email" id="email" class="validate"  placeholder="Enter Email" />
+              <input type="email" id="email" class="validate"  placeholder="Enter Email" formControlName = "email" />
               <span class="helper-text" data-error="Please enter valid email" ></span>
             </div>
           </div>
@@ -29,13 +31,13 @@
               <span>Message</span>
             </div>
             <div class="col s12 m9">
-              <textarea id="message" class="materialize-textarea" placeholder="Enter the message you want to convey" ></textarea>
+              <textarea id="message" class="materialize-textarea" formControlName = "message" placeholder="Enter the message you want to convey" ></textarea>
               <label for="message"></label>
             </div>
           </div>
           <div class="row button-row">
             <div class="col s12 m9 offset-m3">
-              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+              <button [disabled] = "contactForm.invalid" class="btn waves-effect waves-light" type="submit" name="action">Submit
               </button>
             </div>
           </div>
