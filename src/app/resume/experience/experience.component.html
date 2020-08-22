@@ -3,13 +3,13 @@
   <p class="header-title">
     <i class="fa fa-briefcase" aria-hidden="true"></i>Work Experience
   </p>
-  <ul class="collapsible">
-    <li *ngFor="let exp of experienceList" >
-      <div class="collapsible-header" (click) = "exp.isCollapsed = !exp.isCollapsed">
+  <ul class="collapsible" >
+    <li *ngFor="let exp of experienceList"   #collapse>
+      <div class="collapsible-header" >
         <img [src]="exp.imageUrl" alt="company name" >
         {{exp.designaiton}}
-        <i *ngIf = "exp.isCollapsed" class="fa fa-chevron-right right-align" aria-hidden="true"></i>
-        <i *ngIf = "!exp.isCollapsed" class="fa fa-chevron-down right-align" aria-hidden="true"></i>
+        <i *ngIf = "!collapse.classList.contains('active')" class="fa fa-chevron-right right-align" aria-hidden="true"></i>
+        <i *ngIf = "collapse.classList.contains('active')" class="fa fa-chevron-down right-align" aria-hidden="true"></i>
 
       </div>
       <div class="collapsible-body">

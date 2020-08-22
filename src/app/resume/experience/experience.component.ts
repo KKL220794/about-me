@@ -26,6 +26,12 @@ this.isLoading = true;
 
   ngAfterViewInit() {
     jQuery('.collapsible').collapsible() ;
+    jQuery('.collapsible').open(2) ;
+  }
+
+  onCall(e) {
+    console.log(e);
+    
   }
 
 }

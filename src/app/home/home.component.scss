@@ -28,6 +28,7 @@
 
     @media only screen and (max-width: 600px) {
       min-width: 80%;
+      padding: 50px;
   }
   
   // // Media Query for Tablet resolution
@@ -51,6 +52,10 @@
     right: 0;
     bottom: 15%;
     z-index: 100;
+
+    @media screen and (max-width:600px){
+      bottom:7%;
+    }
   }
   
   .mouse-icon .scroll {

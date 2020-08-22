@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
 
   private typings(): void {
     const options = {
-      strings: ["My Name is Krishna Kanhaiya", "I'm a Web Developer", "You just think, I'll make it real"],
+      strings: ["My Name is Krishna Kanhaiya", "I'm a Web Developer", "You just think, I'll make it a reality"],
       typeSpeed: 100,
       backDelay: 900,
       loop : true,
